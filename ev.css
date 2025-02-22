@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Universal Sans Display Meduim';
+    src: url('Universal-Sans-Display-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Universal Sans Display Regular';
+    src: url('Universal-Sans-Display-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Universal Sans Display Bold';
+    src: url('Universal-Sans-Text-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Universal Sans Display Text Medium';
+    src: url('Universal-Sans-Text-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Universal Sans Display Text Regular';
+    src: url('Universal-Sans-Text-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Arabic';
+    src: url('Noto-Sans-Arabic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Greek';
+    src: url('Noto-Sans-Greek.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Hebrew';
+    src: url('Noto-Sans-Hebrew.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Thai';
+    src: url('Noto-Sans-Thai.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: cursive;
+    line-height: 20px;
+    height: 44px;
+    background: linear-gradient(90deg, rgb(228, 198, 120) 0px, rgb(242, 229, 194) 50%, rgb(232, 209, 153) 100%);
+}
+
+main{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-NA-v3.png");
+    background-size: cover;
+    background-position: center;
+    height: 913px;
+    width: 100%;
+}
+
+header p{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Universal Sans Display', sans-serif;
+}
+
+.one{
+    font-weight: 500;
+    line-height: 20px;
+    font-family: "Universal Sans Display Meduim";
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.two{
+    font-size: 14px;
+    font-family: "Universal Sans Display Regular";
+}
+
+.Inventory{
+    border: none;
+    margin: 22px;
+    padding: 7px 12px;
+    border-radius: 4px;
+    font-family: "Universal Sans Display Text Medium";
+    font-size: 12px;
+    color: white;
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+}
+
+nav svg{
+    height: 20px;
+    width: 120px;
+    color: white;
+    margin-left: 32px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 14px;
+    padding-left: 32px;
+    
+    color: white;
+}
+
+ul{
+    list-style: none;
+    font-size: 14px;
+    font-family: "Universal Sans Display Text Medium";
+    padding: 4px 16px;
+    cursor: pointer;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 32px;
+}
+
+.help{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.globe{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.person{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.price{
+    display: flex;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Universal Sans Display Meduim";
+    flex-direction: column;
+    color: white;
+}
+
+.Model-Y{
+    font-size: 64px;
+    font-weight: 500;
+    color: white;
+}
+
+.content a{
+    font-size: 40px;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.content h4{
+    font-family: "Universal Sans Display Text Medium";
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.content .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+
+.order{
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    font-family: "Universal Sans Display Text Medium";
+}
+
+.view{
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background: rgb(249, 249, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-nav svg{
+    height: 50px;
+    width: 24px;
+    color: blue;
+}
+
+.footer-nav h5{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: -20px;
+    font-family: "Universal Sans Display Text Medium";
+    font-stretch: 100%;
+}
+
