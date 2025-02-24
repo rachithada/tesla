@@ -68,6 +68,7 @@
 }
 
 header{
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,9 +77,13 @@ header{
     line-height: 20px;
     height: 44px;
     background: linear-gradient(90deg, rgb(228, 198, 120) 0px, rgb(242, 229, 194) 50%, rgb(232, 209, 153) 100%);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-main{
+.page1{
     background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-NA-v3.png");
     background-size: cover;
     background-position: center;
@@ -118,11 +123,12 @@ header p{
     background-color: black;
 }
 
-nav{
+.page1 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 56px;
+    margin-top: 44px;
 }
 
 nav svg{
@@ -143,11 +149,13 @@ li{
 }
 
 ul{
+    position: relative;
     list-style: none;
     font-size: 14px;
     font-family: "Universal Sans Display Text Medium";
     padding: 4px 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .icon{
@@ -219,7 +227,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 130px;
     
 }
 
@@ -272,4 +280,201 @@ ul{
     font-family: "Universal Sans Display Text Medium";
     font-stretch: 100%;
 }
+
+.page2{
+    position: relative;
+    height: 913px;
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-2-Desktop-NA.png");
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    font-size: 56px;
+    font-family: "Universal Sans Display Meduim";
+    text-align: center;
+    padding-top: 114px;
+}
+
+.page2 p{
+    color: white;
+    font-family: "Universal Sans Display Meduim";
+    font-size: 24px;
+    text-align: center;
+}
+
+.Page2Button1 {
+    position: absolute;
+    bottom: 67px; /* Fixes the button at the bottom */
+    left: 41%;
+    transform: translateX(-40%); /* Centers the button */
+    width: 252px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Universal Sans Display Meduim";
+    padding: 4px 24px;
+}
+
+.Page2Button2 {
+    position: absolute;
+    bottom: 67px; /* Fixes the button at the bottom */
+    left: 56.6%;
+    transform: translateX(-50%); /* Centers the button */
+    width: 252px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Universal Sans Display Meduim";
+    padding: 4px 24px;
+}
+
+.page3{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 913px;
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-US.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.Model3{
+    color: white;
+}
+
+.Model3h4{
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 34px;
+    font-family: "Universal Sans Display Meduim";
+}
+
+.Model3p{
+    font-size: 17px;
+    color: white;
+    font-family: "Universal Sans Display Text Medium";
+    padding-top: 5px;
+}
+
+.buttons2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Page3Button1{
+    position: absolute;
+    bottom: 67px; /* Fixes the button at the bottom */
+    left: 41%;
+    transform: translateX(-40%); /* Centers the button */
+    width: 252px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Universal Sans Display Meduim";
+    padding: 4px 24px;
+}
+
+.Page3Button2 {
+    position: absolute;
+    bottom: 67px;
+    left: 56.6%;
+    transform: translateX(-50%);
+    width: 252px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Universal Sans Display Meduim";
+    padding: 4px 24px;
+}
+
+.tcl-react-video {
+    position: relative; /* Ensures absolute elements stay inside */
+    width: 100%;
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: black;
+}
+
+.tcl-react-media__asset {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-title {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); 
+}
+.video-btn{
+    position: absolute; 
+    
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 50px; /* Adjust based on your navbar height */
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(255, 255, 255, 0.9);
+    transition: height 0.3s ease-in-out, opacity 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+
+/* Ensure the correct overlay appears when hovering */
+.Vehicle:hover ~ .overlay-vehicle,
+.EnergyContent:hover ~ .overlay-energy,
+.ChargingContent:hover ~ .overlay-charging,
+.DiscoverContent:hover ~ .overlay-discover,
+.ShopContent:hover ~ .overlay-shop {
+    height: 150px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Different colors for debugging (optional) */
+.overlay-vehicle { background: rgba(255, 0, 0, 0.9); } /* Red */
+.overlay-energy { background: rgba(0, 255, 0, 0.9); } /* Green */
+.overlay-charging { background: rgba(0, 0, 255, 0.9); } /* Blue */
+.overlay-discover { background: rgba(255, 165, 0, 0.9); } /* Orange */
+.overlay-shop { background: rgba(128, 0, 128, 0.9); } /* Purple */
+
+
+
+
 
